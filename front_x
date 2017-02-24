@@ -1,0 +1,12 @@
+from pandas import Series
+ser4 = Series(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
+def front_x(words):
+   serx=[]
+   sernox=[]
+   for word in words:
+       if word.startswith('x'):
+           serx.append(word)
+       else:
+           sernox.append(word)
+   return sorted(serx) + sorted(sernox)
+front_x(ser4)
