@@ -1,0 +1,9 @@
+from pandas import Series
+ser6 = Series([1,2,2,3,3,3,4,4,4,4,5)
+def remove_adjacent(nums):
+    result = []
+    for num in nums:
+        if len(result) == 0 or num != result[-1]:
+            result.append(num)
+    return result
+remove_adjacent(ser6)
