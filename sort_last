@@ -1,0 +1,5 @@
+from pandas import Series
+ser5 = Series([(1,7), (1,3), (3,4,5), (2,2)])
+def sort_last(tuples):
+    return sorted(tuples, key = lambda numbers: numbers[-1])
+sort_last(ser5)
