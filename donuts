@@ -1,6 +1,0 @@
-def donuts(count):
-    if count < 10:
-        return 'Number of donuts: {}'.format(count)
-    else:
-        return 'Number of donuts: many'
-    
